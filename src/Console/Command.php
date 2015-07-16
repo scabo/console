@@ -32,6 +32,8 @@ class Command
     }
 
     /**
+     * Add agruments to command. You can pass the array of arguments or just an one command
+     *
      * @param string|array $arg
      * @return $this
      */
@@ -47,6 +49,8 @@ class Command
     }
 
     /**
+     * Build command
+     *
      * @return string
      */
     public function render()
@@ -66,6 +70,8 @@ class Command
     }
 
     /**
+     * Execute command
+     *
      * @return mixed
      */
     public function exec()
