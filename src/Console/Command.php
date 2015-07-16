@@ -58,7 +58,11 @@ class Command
             $options .= $arg . ' ';
         }
 
-        return \trim($this->name . ' ' . \escapeshellarg($options));
+        if ($options) {
+            $options = \escapeshellarg(trim($options));
+        }
+
+        return \trim($this->name . ' ' . $options);
     }
 
     /**
