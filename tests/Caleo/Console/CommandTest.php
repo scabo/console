@@ -29,11 +29,16 @@ class CommandTest extends \PHPUnit_Framework_TestCase
         );
     }
 
-    public function testRunLikeFunc()
+    public function testInvoke()
     {
         $ls = (new Command('ls'));
         $this->assertEquals(
             ['composer.json', 'composer.lock', 'phpunit.xml', 'src', 'tests', 'vendor'], $ls()
         );
+    }
+
+    public function testToString()
+    {
+        $this->assertEquals('ls', (string) (new Command('ls')));
     }
 }
