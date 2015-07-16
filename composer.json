@@ -1,0 +1,23 @@
+{
+  "name": "scabo/caleo",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/scabo/caleo",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey",
+      "email": "scabo.dev@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "autoload": {
+    "psr-4": {"Caleo\\": "src/Caleo"}
+  },
+  "autoload-dev": {
+    "psr-4": {"Caleo\\": "tests/Caleo"}
+  }
+}
