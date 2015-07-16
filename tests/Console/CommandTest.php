@@ -24,16 +24,16 @@ class CommandTest extends \PHPUnit_Framework_TestCase
 
     public function testExec()
     {
-        $this->assertEquals(
-            ['LICENSE', 'composer.json', 'composer.lock', 'phpunit.xml', 'src', 'tests', 'vendor'], (new Command('ls'))->exec()
+        $this->assertTrue(
+            in_array('README.md', (new Command('ls'))->exec())
         );
     }
 
     public function testInvoke()
     {
         $ls = (new Command('ls'));
-        $this->assertEquals(
-            ['LICENSE', 'composer.json', 'composer.lock', 'phpunit.xml', 'src', 'tests', 'vendor'], $ls()
+        $this->assertTrue(
+            in_array('README.md', $ls())
         );
     }
 
