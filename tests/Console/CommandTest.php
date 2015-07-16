@@ -1,6 +1,6 @@
 <?php
 
-namespace Caleo\Console;
+namespace Scabo\Console;
 
 
 class CommandTest extends \PHPUnit_Framework_TestCase

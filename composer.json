@@ -1,8 +1,8 @@
 {
-  "name": "scabo/caleo",
+  "name": "scabo/console",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/scabo/caleo",
+  "homepage": "https://github.com/scabo/console",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -15,9 +15,9 @@
     "php": ">=5.4"
   },
   "autoload": {
-    "psr-4": {"Caleo\\": "src/Caleo"}
+    "psr-4": {"Scabo\\Console\\": "src/Console"}
   },
   "autoload-dev": {
-    "psr-4": {"Caleo\\": "tests/Caleo"}
+    "psr-4": {"Scabo\\Console\\": "tests/Console"}
   }
 }
