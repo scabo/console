@@ -17,7 +17,7 @@ class Command
     private $name = null;
 
     /**
-     * List options that's passed to command
+     * Command line argument list
      *
      * @var array
      */
